@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">0ad-counter-unit-guide</string>
+    <string name="hint">...</string>
+    <string name="button_save">Save</string>
+    <string name="empty_not_saved"> not saved because it is empty.</string>
+    <string name="add">Add </string>
+</resources>
