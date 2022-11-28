@@ -5,95 +5,212 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity"
-        android:minWidth="1720px"
-        android:maxWidth="1720px"
-        android:minHeight="1720px"
-        android:maxHeight="2720px">
-    <LinearLayout
-            android:orientation="vertical"
+        tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/row1"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-        <View
-                android:id="@+id/divider"
-                android:layout_width="match_parent"
-                android:layout_height="82dp"
-                android:background="?android:attr/listDivider"
-        />
-        <View
-                android:id="@+id/divider2"
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:background="?android:attr/listDivider"
-        />
-        <Button
-                android:text="@string/app_name"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/button"/>
-        <TableLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-            <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
-                <ImageButton
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        app:srcCompat="@drawable/emblem_athenians"
-                        style="@style/Widget.AppCompat.ImageButton"/>
-                <ImageButton
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        app:srcCompat="@drawable/emblem_britons"
-                />
-                <ImageButton
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        app:srcCompat="@drawable/emblem_carthaginians"
-                />
-                <ImageButton
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        app:srcCompat="@drawable/emblem_iberians"
-                />
-                <ImageButton
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        app:srcCompat="@drawable/emblem_kushites"
-                />
-                <ImageButton
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        app:srcCompat="@drawable/emblem_ptolemies"/>
+        <ImageButton
+                android:id="@+id/r1col1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:padding="0"
+                android:backgroundTint="#00FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/r1col2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/emblem_athenians" />
 
-            </TableRow>
-            <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
-                <ImageButton
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        app:srcCompat="@drawable/emblem_macedonians2"
-                />
-                <ImageButton
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        app:srcCompat="@drawable/emblem_mauryas"/>
-                <ImageButton
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        app:srcCompat="@drawable/emblem_persians"/>
-                <ImageButton
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        app:srcCompat="@drawable/emblem_romans"/>
-                <ImageButton
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        app:srcCompat="@drawable/emblem_spartans"/>
-                <ImageButton
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        app:srcCompat="@drawable/emblem_han"/>
-            </TableRow>
+        <ImageButton
+                android:id="@+id/r1col2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="0"
+                android:backgroundTint="#00FFFFFF"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toEndOf="@+id/r1col1"
+                app:layout_constraintEnd_toStartOf="@+id/r1col3"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/emblem_britons" />
 
-        </TableLayout>
-    </LinearLayout>
+        <ImageButton
+                android:id="@+id/r1col3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="0"
+                android:backgroundTint="#00FFFFFF"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toEndOf="@+id/r1col2"
+                app:layout_constraintEnd_toStartOf="@+id/r1col4"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/emblem_carthaginians" />
+
+        <ImageButton
+                android:id="@+id/r1col4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="0"
+                android:backgroundTint="#00FFFFFF"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toEndOf="@+id/r1col3"
+                app:layout_constraintEnd_toStartOf="@+id/r1col5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/emblem_spartans" />
+
+        <ImageButton
+                android:id="@+id/r1col5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="0"
+                android:backgroundTint="#00FFFFFF"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toEndOf="@+id/r1col4"
+                app:layout_constraintEnd_toStartOf="@+id/r1col6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/emblem_celts" />
+
+        <ImageButton
+                android:id="@+id/r1col6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="0"
+                android:backgroundTint="#00FFFFFF"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toEndOf="@+id/r1col5"
+                app:layout_constraintEnd_toStartOf="@+id/r1col7"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/emblem_iberians" />
+
+        <ImageButton
+                android:id="@+id/r1col7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="0"
+                android:backgroundTint="#00FFFFFF"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toEndOf="@+id/r1col6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/emblem_mauryas" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/row2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/row1">
+
+        <ImageButton
+                android:id="@+id/r2col1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:padding="0"
+                android:backgroundTint="#00FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/r2col2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/emblem_kushites" />
+
+        <ImageButton
+                android:id="@+id/r2col2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="0"
+                android:backgroundTint="#00FFFFFF"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toEndOf="@+id/r2col1"
+                app:layout_constraintEnd_toStartOf="@+id/r2col3"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/emblem_macedonians" />
+
+        <ImageButton
+                android:id="@+id/r2col3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="0"
+                android:backgroundTint="#00FFFFFF"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toEndOf="@+id/r2col2"
+                app:layout_constraintEnd_toStartOf="@+id/r2col4"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/emblem_persians" />
+
+        <ImageButton
+                android:id="@+id/r2col4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="0"
+                android:backgroundTint="#00FFFFFF"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toEndOf="@+id/r2col3"
+                app:layout_constraintEnd_toStartOf="@+id/r2col5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/emblem_ptolemies" />
+
+        <ImageButton
+                android:id="@+id/r2col5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="0"
+                android:backgroundTint="#00FFFFFF"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toEndOf="@+id/r2col4"
+                app:layout_constraintEnd_toStartOf="@+id/r2col6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/emblem_romans" />
+
+        <ImageButton
+                android:id="@+id/r2col6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="0"
+                android:backgroundTint="#00FFFFFF"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toEndOf="@+id/r2col5"
+                app:layout_constraintEnd_toStartOf="@+id/r2col7"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/emblem_seleucids" />
+
+        <ImageButton
+                android:id="@+id/r2col7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="0"
+                android:backgroundTint="#00FFFFFF"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toEndOf="@+id/r2col6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/emblem_han" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
