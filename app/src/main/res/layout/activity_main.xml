@@ -20,44 +20,48 @@
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
-                android:padding="0"
+                android:padding="@null"
                 android:backgroundTint="#00FFFFFF"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/r1col2"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/emblem_athenians" />
+                app:srcCompat="@drawable/emblem_athenians"
+                android:contentDescription="Carthaginians"
+                />
 
         <ImageButton
                 android:id="@+id/r1col2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:padding="0"
+                android:padding="@null"
                 android:backgroundTint="#00FFFFFF"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 app:layout_constraintStart_toEndOf="@+id/r1col1"
                 app:layout_constraintEnd_toStartOf="@+id/r1col3"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/emblem_britons" />
+                app:srcCompat="@drawable/emblem_britons" android:contentDescription="Britons"/>
 
         <ImageButton
                 android:id="@+id/r1col3"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:padding="0"
+                android:padding="@null"
                 android:backgroundTint="#00FFFFFF"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 app:layout_constraintStart_toEndOf="@+id/r1col2"
                 app:layout_constraintEnd_toStartOf="@+id/r1col4"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/emblem_carthaginians" />
+                app:srcCompat="@drawable/emblem_carthaginians"
+                android:contentDescription="Carthaginians"
+        />
 
         <ImageButton
                 android:id="@+id/r1col4"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:padding="0"
+                android:padding="@null"
                 android:backgroundTint="#00FFFFFF"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
@@ -65,13 +69,13 @@
                 app:layout_constraintEnd_toStartOf="@+id/r1col5"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/emblem_spartans" />
+                app:srcCompat="@drawable/emblem_spartans" android:contentDescription="spartans"/>
 
         <ImageButton
                 android:id="@+id/r1col5"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:padding="0"
+                android:padding="@null"
                 android:backgroundTint="#00FFFFFF"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
@@ -79,33 +83,33 @@
                 app:layout_constraintEnd_toStartOf="@+id/r1col6"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/emblem_celts" />
+                app:srcCompat="@drawable/emblem_celts" android:contentDescription="Gauls"/>
 
         <ImageButton
                 android:id="@+id/r1col6"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:padding="0"
+                android:padding="@null"
                 android:backgroundTint="#00FFFFFF"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 app:layout_constraintStart_toEndOf="@+id/r1col5"
                 app:layout_constraintEnd_toStartOf="@+id/r1col7"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/emblem_iberians" />
+                app:srcCompat="@drawable/emblem_iberians" android:contentDescription="Iberians"/>
 
         <ImageButton
                 android:id="@+id/r1col7"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:padding="0"
+                android:padding="@null"
                 android:backgroundTint="#00FFFFFF"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 app:layout_constraintStart_toEndOf="@+id/r1col6"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/emblem_mauryas" />
+                app:srcCompat="@drawable/emblem_mauryas" android:contentDescription="Mauryas"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -122,44 +126,44 @@
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
-                android:padding="0"
+                android:padding="@null"
                 android:backgroundTint="#00FFFFFF"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/r2col2"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/emblem_kushites" />
+                app:srcCompat="@drawable/emblem_kushites" android:contentDescription="Kushites"/>
 
         <ImageButton
                 android:id="@+id/r2col2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:padding="0"
+                android:padding="@null"
                 android:backgroundTint="#00FFFFFF"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 app:layout_constraintStart_toEndOf="@+id/r2col1"
                 app:layout_constraintEnd_toStartOf="@+id/r2col3"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/emblem_macedonians" />
+                app:srcCompat="@drawable/emblem_macedonians" android:contentDescription="Macedonians"/>
 
         <ImageButton
                 android:id="@+id/r2col3"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:padding="0"
+                android:padding="@null"
                 android:backgroundTint="#00FFFFFF"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 app:layout_constraintStart_toEndOf="@+id/r2col2"
                 app:layout_constraintEnd_toStartOf="@+id/r2col4"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/emblem_persians" />
+                app:srcCompat="@drawable/emblem_persians" android:contentDescription="Persians"/>
 
         <ImageButton
                 android:id="@+id/r2col4"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:padding="0"
+                android:padding="@null"
                 android:backgroundTint="#00FFFFFF"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
@@ -167,13 +171,13 @@
                 app:layout_constraintEnd_toStartOf="@+id/r2col5"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/emblem_ptolemies" />
+                app:srcCompat="@drawable/emblem_ptolemies" android:contentDescription="Ptolemies"/>
 
         <ImageButton
                 android:id="@+id/r2col5"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:padding="0"
+                android:padding="@null"
                 android:backgroundTint="#00FFFFFF"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
@@ -181,33 +185,33 @@
                 app:layout_constraintEnd_toStartOf="@+id/r2col6"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/emblem_romans" />
+                app:srcCompat="@drawable/emblem_romans" android:contentDescription="Romans"/>
 
         <ImageButton
                 android:id="@+id/r2col6"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:padding="0"
+                android:padding="@null"
                 android:backgroundTint="#00FFFFFF"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 app:layout_constraintStart_toEndOf="@+id/r2col5"
                 app:layout_constraintEnd_toStartOf="@+id/r2col7"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/emblem_seleucids" />
+                app:srcCompat="@drawable/emblem_seleucids" android:contentDescription="Seleucids"/>
 
         <ImageButton
                 android:id="@+id/r2col7"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:padding="0"
+                android:padding="@null"
                 android:backgroundTint="#00FFFFFF"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 app:layout_constraintStart_toEndOf="@+id/r2col6"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/emblem_han" />
+                app:srcCompat="@drawable/emblem_han" android:contentDescription="Han"/>
 
 
 
