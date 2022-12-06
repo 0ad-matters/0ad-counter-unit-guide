@@ -6,5 +6,5 @@ is in development
 
 Unofficial [0ad](https://play0ad.com/)
 
-![Screenshot_20221206_075203](https://user-images.githubusercontent.com/5634759/205841883-6ab0e2d1-5a50-404f-a2d4-11fd53feaa67.jpg)
+![Screenshot_20221206_155555](https://user-images.githubusercontent.com/5634759/205945926-539dd64f-b610-4d0e-9c63-387e0523cdf3.jpg)
 
