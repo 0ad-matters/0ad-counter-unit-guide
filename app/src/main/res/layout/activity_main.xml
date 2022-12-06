@@ -17,11 +17,11 @@
         <TextView
                 android:text="select opponent Civilization"
                 android:id="@+id/textView"
-                android:layout_height="match_parent"
-                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-        android:scaleType="fitCenter"
+                android:scaleType="fitCenter"
 
                 app:fontFamily="sans-serif-black"
 
@@ -31,7 +31,7 @@
                 android:autoSizeMaxTextSize="100sp"
                 android:autoSizeStepGranularity="2sp"
 
-        />
+                android:layout_marginStart="16dp" android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
 
 
 
