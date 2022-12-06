@@ -1,31 +1,77 @@
 package de.sl5.counterUnitGuide0ad
+import android.graphics.PorterDuff
 import android.os.Bundle
+import android.view.MotionEvent
 import android.view.View
+import android.view.animation.AlphaAnimation
 import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.setPadding
+
 
 class MainActivity : AppCompatActivity() {
+
+    private var itClickedPadding: Int = 0
+    private var itClicked: View? = null
+
+    fun clickAnimation(): AlphaAnimation? {
+        return AlphaAnimation(1f, 0.4f) // Change "0.4F" as per your recruitment.
+    }
+
+
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 //        findViewById<ImageButton>(R.id.r1col1).setOnClickListener {
-//            toastContentDescription(it)
+//            it.drawableState()
+//        }
+
+
+
+
+
+
         for (i in 1..7) {
             val idR1: Int = resources.getIdentifier("r1col$i", "id", this.packageName)
             val idR2: Int = resources.getIdentifier("r2col$i", "id", this.packageName)
             findViewById<ImageButton>(idR1).setOnClickListener {
                 showTextAboutOppCiv(it)
+//                it.foreground("?android:attr/selectableItemBackground")
             }
             findViewById<ImageButton>(idR2).setOnClickListener {
                 showTextAboutOppCiv(it)
+
+
             }
+
+
+            // android:background="?android:selectableItemBackgroundBorderless"
+
+
         }
     }
     private fun showTextAboutOppCiv(it: View) {
+
         var msgOppCiv = "Your opponent use ${it.contentDescription} Civilization. "
+
         Toast.makeText(applicationContext, msgOppCiv, Toast.LENGTH_SHORT).show()
+
+        if (itClicked !== null) {
+//            itClicked!!.setPadding(20, 20, 20, 20)
+            itClicked!!.setPadding(itClickedPadding, itClickedPadding, itClickedPadding, itClickedPadding)
+        }
+
+        itClicked = it
+        itClickedPadding = it.paddingLeft
+
+        it.setPadding(0,0,0,0)
+        it.startAnimation(clickAnimation());
+
         val editMultiLineID: Int = resources.getIdentifier("editTextTextMultiLine", "id", this.packageName)
         when (it.contentDescription) {
             "Athenians" -> {
@@ -98,6 +144,10 @@ class MainActivity : AppCompatActivity() {
             }
         }
         findViewById<EditText>(editMultiLineID).setText(msgOppCiv.replace("""[ \t]+""".toRegex(), " ").trimIndent())
+
+
+
+
     }
 }
 
