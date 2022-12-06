@@ -4,9 +4,6 @@ import android.view.View
 import android.widget.ImageButton
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-
-
-
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,9 +22,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
     private fun toastContentDescription(it: View) {
-        val contentDescription: String = it.contentDescription.toString()
-        val myToast = Toast.makeText(applicationContext, "Your opponent use $contentDescription Civilization", Toast.LENGTH_SHORT)
-        myToast.show()
+        Toast.makeText(applicationContext, "Your opponent use ${it.contentDescription} Civilization", Toast.LENGTH_SHORT).show()
     }
 }
 
