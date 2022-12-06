@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
     }
     private fun toastContentDescription(it: View) {
         val contentDescription: String = it.contentDescription.toString()
-        val myToast = Toast.makeText(applicationContext, "Your use $contentDescription Civilization", Toast.LENGTH_SHORT)
+        val myToast = Toast.makeText(applicationContext, "Your opponent use $contentDescription Civilization", Toast.LENGTH_SHORT)
         myToast.show()
     }
 }
