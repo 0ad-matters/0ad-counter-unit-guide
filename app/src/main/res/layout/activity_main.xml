@@ -8,11 +8,41 @@
         tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/row1"
+            android:id="@+id/row0"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+                android:text="select opponent Civilization"
+                android:id="@+id/textView"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="fitCenter"
+
+                app:fontFamily="sans-serif-black"
+
+
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="18sp"
+                android:autoSizeMaxTextSize="100sp"
+                android:autoSizeStepGranularity="2sp"
+
+        />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/row1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/row0">
 
         <ImageButton
                 android:id="@+id/r1col1"
