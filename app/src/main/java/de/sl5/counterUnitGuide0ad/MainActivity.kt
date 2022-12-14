@@ -11,6 +11,19 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.setPadding
 
 
+/*
+some resources online
+barracks
+https://github.com/0ad/0ad/blob/aa07435f392c1d16fc67635e3f6de4e41194acf0/binaries/data/mods/public/art/textures/ui/session/portraits/structures/barracks.png
+
+emblems macedonians
+https://github.com/0ad/0ad/blob/master/binaries/data/mods/public/art/textures/ui/session/portraits/emblems/emblem_macedonians.png
+
+brit_infantry_spearman
+https://github.com/0ad/0ad/blob/aa07435f392c1d16fc67635e3f6de4e41194acf0/binaries/data/mods/public/art/textures/ui/session/portraits/units/brit_infantry_spearman.png
+ */
+
+
 class MainActivity : AppCompatActivity() {
 
     private var itClickedPadding: Int = 0
@@ -20,21 +33,12 @@ class MainActivity : AppCompatActivity() {
         return AlphaAnimation(1f, 0.4f) // Change "0.4F" as per your recruitment.
     }
 
-
-
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 //        findViewById<ImageButton>(R.id.r1col1).setOnClickListener {
 //            it.drawableState()
 //        }
-
-
-
-
-
 
         for (i in 1..7) {
             val idR1: Int = resources.getIdentifier("r1col$i", "id", this.packageName)
@@ -45,14 +49,8 @@ class MainActivity : AppCompatActivity() {
             }
             findViewById<ImageButton>(idR2).setOnClickListener {
                 showTextAboutOppCiv(it)
-
-
             }
-
-
             // android:background="?android:selectableItemBackgroundBorderless"
-
-
         }
     }
     private fun showTextAboutOppCiv(it: View) {
