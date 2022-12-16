@@ -254,7 +254,7 @@
             app:layout_constraintTop_toBottomOf="@+id/row2">
 
         <ImageButton
-                android:id="@+id/r4col1"
+                android:id="@+id/r3col1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
@@ -262,98 +262,98 @@
                 android:padding="@null"
                 android:backgroundTint="#00FFFFFF"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/r4col2"
+                app:layout_constraintEnd_toStartOf="@+id/r3col2"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/brit_infantry_spearman"
-                android:contentDescription="brit_infantry_spearman"
+                android:contentDescription="infantry_spearman"
         />
 
         <ImageButton
-                android:id="@+id/r4col2"
+                android:id="@+id/r3col2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:padding="@null"
                 android:backgroundTint="#00FFFFFF"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
-                app:layout_constraintStart_toEndOf="@+id/r4col1"
-                app:layout_constraintEnd_toStartOf="@+id/r4col3"
+                app:layout_constraintStart_toEndOf="@+id/r3col1"
+                app:layout_constraintEnd_toStartOf="@+id/r3col3"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/brit_infantry_javelinist"
-                android:contentDescription="brit_infantry_javelinist"/>
+                android:contentDescription="infantry_javelinist"/>
 
         <ImageButton
-                android:id="@+id/r4col3"
+                android:id="@+id/r3col3"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:padding="@null"
                 android:backgroundTint="#00FFFFFF"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
-                app:layout_constraintStart_toEndOf="@+id/r4col2"
-                app:layout_constraintEnd_toStartOf="@+id/r4col4"
+                app:layout_constraintStart_toEndOf="@+id/r3col2"
+                app:layout_constraintEnd_toStartOf="@+id/r3col4"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/brit_cavalry_javelinist"
-                android:contentDescription="Carthaginians"
+                android:contentDescription="cavalry_javelinist"
         />
 
         <ImageButton
-                android:id="@+id/r4col4"
+                android:id="@+id/r3col4"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:padding="@null"
                 android:backgroundTint="#00FFFFFF"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
-                app:layout_constraintStart_toEndOf="@+id/r4col3"
-                app:layout_constraintEnd_toStartOf="@+id/r4col5"
+                app:layout_constraintStart_toEndOf="@+id/r3col3"
+                app:layout_constraintEnd_toStartOf="@+id/r3col5"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/athen_infantry_slinger"
-                android:contentDescription="brit_infantry_slinger"/>
+                android:contentDescription="infantry_slinger"/>
 
         <ImageButton
-                android:id="@+id/r4col5"
+                android:id="@+id/r3col5"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:padding="@null"
                 android:backgroundTint="#00FFFFFF"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
-                app:layout_constraintStart_toEndOf="@+id/r4col4"
-                app:layout_constraintEnd_toStartOf="@+id/r4col6"
+                app:layout_constraintStart_toEndOf="@+id/r3col4"
+                app:layout_constraintEnd_toStartOf="@+id/r3col6"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/brit_cavalry_javelinist"
-                android:contentDescription="brit_cavalry_javelinist"/>
+                android:contentDescription="cavalry_javelinist"/>
 
         <ImageButton
-                android:id="@+id/r4col6"
+                android:id="@+id/r3col6"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:padding="@null"
                 android:backgroundTint="#00FFFFFF"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
-                app:layout_constraintStart_toEndOf="@+id/r4col5"
-                app:layout_constraintEnd_toStartOf="@+id/r4col7"
+                app:layout_constraintStart_toEndOf="@+id/r3col5"
+                app:layout_constraintEnd_toStartOf="@+id/r3col7"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/brit_cavalry_swordsman"
-                android:contentDescription="brit_cavalry_swordsman"/>
+                android:contentDescription="cavalry_swordsman"/>
 
         <ImageButton
-                android:id="@+id/r4col7"
+                android:id="@+id/r3col7"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:padding="@null"
                 android:backgroundTint="#00FFFFFF"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
-                app:layout_constraintStart_toEndOf="@+id/r4col6"
+                app:layout_constraintStart_toEndOf="@+id/r3col6"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/brit_champion_chariot"
-                android:contentDescription="brit_champion_chariot"/>
+                android:contentDescription="champion_chariot"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
