@@ -247,7 +247,7 @@
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/row4"
+            android:id="@+id/row3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
@@ -354,6 +354,118 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/brit_champion_chariot"
                 android:contentDescription="champion_chariot"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/row4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/row3">
+
+        <ImageButton
+                android:id="@+id/r4col1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:padding="@null"
+                android:backgroundTint="#00FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/r4col2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/athen_siege_ram"
+                android:contentDescription="siege_ram"
+        />
+
+        <ImageButton
+                android:id="@+id/r4col2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="@null"
+                android:backgroundTint="#00FFFFFF"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toEndOf="@+id/r4col1"
+                app:layout_constraintEnd_toStartOf="@+id/r4col3"
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription=""/>
+        <!--                app:srcCompat="@drawable/brit_infantry_javelinist"-->
+
+        <ImageButton
+                android:id="@+id/r4col3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="@null"
+                android:backgroundTint="#00FFFFFF"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toEndOf="@+id/r4col2"
+                app:layout_constraintEnd_toStartOf="@+id/r4col4"
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="cavalry_javelinist"
+        />
+        <!--                app:srcCompat="@drawable/brit_cavalry_javelinist"-->
+
+        <ImageButton
+                android:id="@+id/r4col4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="@null"
+                android:backgroundTint="#00FFFFFF"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toEndOf="@+id/r4col3"
+                app:layout_constraintEnd_toStartOf="@+id/r4col5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="infantry_slinger"/>
+        <!--                app:srcCompat="@drawable/athen_infantry_slinger"-->
+
+        <ImageButton
+                android:id="@+id/r4col5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="@null"
+                android:backgroundTint="#00FFFFFF"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toEndOf="@+id/r4col4"
+                app:layout_constraintEnd_toStartOf="@+id/r4col6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="cavalry_javelinist"/>
+        <!--                app:srcCompat="@drawable/brit_cavalry_javelinist"-->
+
+        <ImageButton
+                android:id="@+id/r4col6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="@null"
+                android:backgroundTint="#00FFFFFF"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toEndOf="@+id/r4col5"
+                app:layout_constraintEnd_toStartOf="@+id/r4col7"
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="cavalry_swordsman"/>
+        <!--                app:srcCompat="@drawable/brit_cavalry_swordsman"-->
+
+        <ImageButton
+                android:id="@+id/r4col7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="@null"
+                android:backgroundTint="#00FFFFFF"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toEndOf="@+id/r4col6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="champion_chariot"/>
+        <!--                app:srcCompat="@drawable/brit_champion_chariot"-->
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

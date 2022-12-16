@@ -44,6 +44,7 @@ class MainActivity : AppCompatActivity() {
             val idR1: Int = resources.getIdentifier("r1col$i", "id", this.packageName)
             val idR2: Int = resources.getIdentifier("r2col$i", "id", this.packageName)
             val idR3: Int = resources.getIdentifier("r3col$i", "id", this.packageName)
+            val idR4: Int = resources.getIdentifier("r4col$i", "id", this.packageName)
             findViewById<ImageButton>(idR1).setOnClickListener {
                 showTextAboutOppCiv(it)
 //                it.foreground("?android:attr/selectableItemBackground")
@@ -52,6 +53,9 @@ class MainActivity : AppCompatActivity() {
                 showTextAboutOppCiv(it)
             }
             findViewById<ImageButton>(idR3).setOnClickListener {
+                showTextAboutOppObject(it)
+            }
+            findViewById<ImageButton>(idR4).setOnClickListener {
                 showTextAboutOppObject(it)
             }
             // android:background="?android:selectableItemBackgroundBorderless"
