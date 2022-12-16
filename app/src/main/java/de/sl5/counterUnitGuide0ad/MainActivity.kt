@@ -245,7 +245,7 @@ shoot arrows.
 Better protected then cavalry and runs a bit slower.
             """
             }
-            "Rams" -> {
+            "siege_ram" -> {
                 msgOppObjName += """
 Siege Rams knock down enemy structures, walls and especially gates.
 Well protected from arrow fire and capable of garrisoning anywhere from 5 to 10 infantry for extra protection.
