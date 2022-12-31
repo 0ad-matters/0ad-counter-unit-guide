@@ -39,18 +39,27 @@ class MainActivity : AppCompatActivity() {
 //        findViewById<ImageButton>(R.id.r1col1).setOnClickListener {
 //            it.drawableState()
 //        }
+        val idR5_oppCiv: Int = resources.getIdentifier("r5col1", "id", this.packageName)
 
         for (i in 1..7) {
             val idR1: Int = resources.getIdentifier("r1col$i", "id", this.packageName)
+            val idR2: Int = resources.getIdentifier("r2col$i", "id", this.packageName)
+            val imageR1 = findViewById<ImageButton>(idR1)
+            val imageR2 = findViewById<ImageButton>(idR2)
+
+
             val idR2Civ: Int = resources.getIdentifier("r2col$i", "id", this.packageName)
             val idR3Civ: Int = resources.getIdentifier("r3col$i", "id", this.packageName)
             val idR4Obj: Int = resources.getIdentifier("r4col$i", "id", this.packageName)
             findViewById<ImageButton>(idR1).setOnClickListener {
-                showTextAboutOppCiv(it)
 //                it.foreground("?android:attr/selectableItemBackground")
+                showTextAboutOppCiv(it)
+                findViewById<ImageButton>(idR5_oppCiv).setImageDrawable(imageR1.drawable)
             }
             findViewById<ImageButton>(idR2Civ).setOnClickListener {
                 showTextAboutOppCiv(it)
+//                findViewById<ImageButton>(idR5_oppCiv).setImageResource(findViewById<ImageButton>(idR2Civ).getDrawable);
+                findViewById<ImageButton>(idR5_oppCiv).setImageDrawable(imageR2.drawable)
             }
             findViewById<ImageButton>(idR3Civ).setOnClickListener {
                 clickedObjectAction(it)
